@@ -10,8 +10,10 @@ function searchCountry() {
           <p>Capital: ${country.capital}</p>
           <p>Population: ${country.population}</p>
           <p>Region: ${country.region}</p>
-          <button onclick="showWeather('${country.name.common}')">Show Weather</button>
+          <div id="showButton"> <button  onclick="showWeather('${country.name.common}')">Show Weather</button>
+          </div>
         `;
+
         document.getElementById("countryInfo").innerHTML = countryInfo;
       } else {
         document.getElementById("countryInfo").innerHTML =
@@ -27,6 +29,7 @@ function showWeather(countryName) {
   )
     .then((response) => response.json())
     .then((data) => {
+      document.getElementById("showButton").innerHTML="";
       const weatherInfo = `
         <p>Temperature: ${Math.round(data.main.temp - 273.15)}°C</p>
         <p>Description: ${data.weather[0].description}</p>
