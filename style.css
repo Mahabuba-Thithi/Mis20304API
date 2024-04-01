@@ -1,0 +1,131 @@
+/* style.css */
+body{
+  background-color:rgb(220, 245, 230);
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #3a3a3a;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a:hover {
+  color: #ffd700; /* Change color on hover */
+}
+
+.container {
+  margin: 20px auto;
+  width:500px;
+
+}
+
+#searchInput {
+  margin-bottom: 10px;
+}
+
+.country-info {
+  margin-top: 20px;
+}
+
+.innerStyle img {
+  width: 200px;
+}
+
+.innerStyle {
+  margin: 10px;
+  padding: 10px;
+  background-color: bisque;
+  border: 1px solid grey;
+  border-radius: 15px;
+}
+
+#countryInfo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color:gainsboro;
+}
+
+footer{
+  margin-top:320px;	
+position: absolute;
+background:gray;
+height:250px;
+width: 100vw;
+padding-top:20px;
+color: #fff;
+
+}
+
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+.socials li{
+  margin: 0 10px;
+}
+.socials a{
+  text-decoration: none;
+  color:lightskyblue;
+}
+.socials a i{
+  font-size: 1.1rem;
+  transition: color .4s ease;
+
+}
+.socials a:hover i{
+  color:rosybrown;
+}
+
+.footer-bottom{
+  background: #000;
+  width: 100vw;
+  text-align: center;
+}
+.footer-bottom p{
+  font-size: 14px;
+  word-spacing: 2px;
+}
+.footer-bottom span{
+  text-transform: uppercase;
+  opacity: .4;
+}
+
